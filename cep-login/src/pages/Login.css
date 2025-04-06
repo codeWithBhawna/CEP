@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 1;
+    position: relative;
+  }
+  
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 816px;
+    object-fit: cover;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  

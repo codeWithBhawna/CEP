@@ -1,0 +1,92 @@
+.onboarding-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 30px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .onboarding-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .onboarding-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .onboarding-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .onboarding-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .onboarding-image img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .onboarding-content {
+    flex: 1;
+    padding-left: 50px;
+  }
+  
+  .onboarding-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .onboarding-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .onboarding-input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content;
+  }
+  
+  .onboarding-input-group input {
+    border: none;
+    padding: 10px;
+    width: 250px;
+    outline: none;
+  }
+  
+  .onboarding-input-group button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  .onboarding-input-group button:hover {
+    background-color: #e0a800;
+  }
+  
