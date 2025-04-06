@@ -48,3 +48,17 @@ function Onboarding() {
 }
 
 export default Onboarding;
+console.log('Onboarding component rendered');
+console.log('User name:', userName);
+console.log('Project name:', projectName);
+
+const handleStartProject = () => {
+  console.log('Start project button clicked');
+  if (projectName.trim() !== '') {
+    console.log('Navigating to dashboard with project name:', projectName);
+    navigate('/dashboard', { state: { userName, projectName } });
+  } else {
+    console.log('Project name is empty');
+    alert('Please enter a project name');
+  }
+};
