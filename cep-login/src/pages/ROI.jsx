@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Dashboard.css';
-import NotificationPanel from '../components/NotificationPanel';
 
-function Dashboard() {
+function ROI() {
   const location = useLocation();
   const navigate = useNavigate();
   const userName = location.state?.userName || 'User';
@@ -25,8 +24,8 @@ function Dashboard() {
       {/* Sidebar */}
       <div className="sidebar">
         <ul>
-          <li className="active">Dashboard</li>
-          <li onClick={() => navigate('/roi')}>ROI</li>
+          <li className="active">ROI</li>
+          <li onClick={() => navigate('/dashboard')}>Dashboard</li>
           <li>EMote</li>
           <li>Visualize</li>
           <li>Resources</li>
@@ -43,13 +42,21 @@ function Dashboard() {
 
             {/* Notification */}
             <div className="notification-wrapper">
-  <div className="notification-icon" onClick={toggleNotificationDropdown}>🔔</div>
-  {notificationOpen && (
-    <div className="notification-dropdown">
-      <NotificationPanel /> 
-    </div>
-  )}
-</div>
+              <div className="notification-icon" onClick={toggleNotificationDropdown}>🔔</div>
+              {notificationOpen && (
+                <div className="notification-dropdown">
+                  <div className="notification-item">Notification 1</div>
+                  <div className="notification-item">Notification 2</div>
+                  <div className="notification-item">Notification 3</div>
+                  <div className="notification-item">Notification 4</div>
+                  <div className="notification-item">Notification 5</div>
+                  <div className="notification-item">Notification 6</div>
+                  <div className="notification-item">Notification 7</div>
+                  <div className="notification-item">Notification 8</div>
+                </div>
+              )}
+            </div>
+
             {/* Project Name Button */}
             <div className="project-dropdown">
               <button className="project-name" onClick={toggleProjectDropdown}>
@@ -73,10 +80,14 @@ function Dashboard() {
           <h2>Good morning, {userName}!</h2>
           <p>"Our role is to imagine products that don't exist and guide them to life."</p>
           <p>~ Christopher Stringer, Former Designer at Apple</p>
+
+          <button className="roi-button">
+               Calculate your first ROI
+            </button>
         </div>
       </div>
     </div>
   );
 }
 
-export default Dashboard;
+export default ROI;
