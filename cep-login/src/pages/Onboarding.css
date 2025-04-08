@@ -38,8 +38,12 @@
   }
   
   .onboarding-image img {
-    width: 300px;
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 720px;
+    object-fit: cover;
   }
   
   .onboarding-content {
